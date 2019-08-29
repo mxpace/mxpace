@@ -4,5 +4,8 @@
 <script>
   var request = new XMLHttpRequest()
 	request.open('GET', 'hhttps://api.github.com/users/mxpace/gists', true)
+	request.onload = function(){
+	alert("hello")
+	}
 	request.send()
 </script>
