@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<h1>yeetsx</h1>
+<h1>yeetsxl</h1>
 <div id="postsgohere">
 <p id="p1"></p>
 </div>
@@ -8,7 +8,7 @@
 	request.open('GET', 'https://api.github.com/users/mxpace/gists', true)
 	request.onload = function(){
 	var gists = (JSON.parse(this.response))
-	document.getElementById("p1").innerHTML = String(gists);
+	document.getElementById("p1").innerHTML = JSON.stringify(gists);
 	}
 	request.send()
 </script>
