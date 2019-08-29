@@ -3,9 +3,10 @@
 <div id="postsgohere"></div>
 <script>
   var request = new XMLHttpRequest()
-	request.open('GET', 'https://api.github.com/users/mxpace/gists', true)
+	request.open('GET', 'https://api.github.com/users/mxpace/gists/public', true)
 	request.onload = function(){
-	alert(JSON.stringify(this.response))
+	var gists = (JSON.parse(this.response))
+	alert(gists.filename)
 	}
 	request.send()
 </script>
