@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<h1>yeets!</h1>
+<h1>yeets?</h1>
 <div id="postsgohere"></div>
 <script>
   var request = new XMLHttpRequest()
-	request.open('GET', 'https://api.github.com/users/mxpace/gists/public', true)
+	request.open('GET', 'https://api.github.com/users/mxpace/gists', true)
 	request.onload = function(){
 	var gists = (JSON.parse(this.response))
 	alert(gists.filename)
