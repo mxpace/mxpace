@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<h1>yeets?</h1>
-<div id="postsgohere"></div>
+<h1>yeetsx</h1>
+<div id="postsgohere">
+<p id="p1"></p>
+</div>
 <script>
   var request = new XMLHttpRequest()
 	request.open('GET', 'https://api.github.com/users/mxpace/gists', true)
 	request.onload = function(){
 	var gists = (JSON.parse(this.response))
-	alert(gists.filename)
+	document.getElementById("p1").innerHTML = String(gists);
 	}
 	request.send()
 </script>
