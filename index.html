@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<h1>yeet</h1>
+<h1>yeets</h1>
 <div id="postsgohere"></div>
 <script>
   var request = new XMLHttpRequest()
 	request.open('GET', 'https://api.github.com/users/mxpace/gists', true)
 	request.onload = function(){
-	alert("hello")
+	alert(JSON.stringify(this.response))
 	}
 	request.send()
 </script>
